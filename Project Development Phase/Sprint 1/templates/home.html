@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homestyles.css') }}" />
+    <title>Home</title>
+</head>
+
+<body>
+    <!--
+    <h1>Login Authentication System in Flask.</h1>
+    <a href="{{ url_for('login') }}">Login Page</a><br>
+    <a href="{{ url_for('register') }}">Register Page</a><br>
+
+
+    -->
+
+
+
+
+
+<div class="login">
+    <form id="login" method="" action="">
+        
+        <center><a href="{{ url_for('login') }}">Login Page</a><br></center>
+        <center><a href="{{ url_for('register') }}">Register Page</a><br></center>
+        <br><br>
+    </form>
+
+
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "1e1722cd-90ae-4848-9eb2-e559c5ab71c8", // The ID of this integration.
+        region: "jp-tok", // The region your integration is hosted in.
+        serviceInstanceID: "0738c83e-02d9-4636-8b32-0908a70361e3", // The ID of your service instance.
+        onLoad: function (instance) { instance.render(); }
+    };
+    setTimeout(function () {
+        const t = document.createElement('script');
+        t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
